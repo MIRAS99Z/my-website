@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+    <header class="container">
+        <span class="">LOGO</span>
+        <nav>
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">News</a></li>
+                <li class="btn"><a href="#">Contacts</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <div class="hero container">
+        <div class="hero--info">
+            <h2>3D Game Dev</h2>
+            <h1>Work that we produce for our clients</h1>
+            <p>Loren imput is simply dummy text of the priting and anymore see that and industry.</p>
+            <button class="btn">Get more details</button>
+        </div>
+        <img src="hands-holding-a-video-game-controller-joystick-free-png.webp" alt="">
+      </div>
+
+        <div class="container trending">
+            <a href="#" class="see-all">SEE ALL</a>
+            <h3>Currently Trending Games</h3>
+
+            <div class="games">
+                <div class="block">
+                    <img src="apps.808.14492077886571533.be42f4bd-887b-4430-8ed0-622341b4d2b0.jpeg" alt="">
+                    <span><img src="" alt="">40 Followers</span>
+                </div>
+                <div class="block">
+                    <img src="thumbnail_1724422308_66c898a46607d.webp" alt="">
+                    <span><img src="" alt="">120 Followers</span>
+                </div>
+                <div class="block">
+                    <img src="apps.808.14492077886571533.be42f4bd-887b-4430-8ed0-622341b4d2b0.jpeg" alt="">
+                    <span><img src="" alt="">85 Followers</span>
+                </div>
+                <div class="block">
+                    <img src="thumbnail_1724422308_66c898a46607d.webp" alt="">
+                    <span><img src="" alt="">56 Followers</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container big-text">
+            <p>Looking purely at the number of active players worldwide, 
+                100 million gamers enjoying this Battle Royale classic.</p>
+        </div>
+
+        <div class="container banner">
+            <h3 id="mk">Lorem Ipsum</h3>
+            <p>Loren imput is simply dummy text of the priting and anymore see that and industry.</p>
+            <img src="mortalkombat_gamer_hero.jpg" alt="">
+        </div>
+
+        <div class="container email">
+            <h3>Lorem Ipsum</h3>
+            <p>An abstract strategy game for two players involving a triangular (equilateral) board that has positions for 36 balls, or marbles.</p>
+            <div class="block">
+                <div>
+                    <h4>Stay in the loop</h4>
+                    <p>Compete with 3-6 players to make it to the end of the quiz and answer a question only 1% of the country can get right. Win up to £100,000 in prize money by proving you're one of the top quizzers in the nation!</p>
+                </div>
+                <div>
+                    <input type="email" id="emailField" placeholder="Enter email address">
+                    <button onclick="checkEmail()">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function checkEmail() {
+            let email = document.querySelector('#emailField').value;
+            if (!email.includes('@')) alert('Нет символа @');
+            else if (!email.includes('.')) alert('Нет символа .');
+            else alert('Все отлично!');
+        }
+    </script>
+</body>
+</html>
